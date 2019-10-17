@@ -1,0 +1,265 @@
+@charset "utf-8";
+@import url("shadowbox.css");
+
+
+
+/*------------------------------GLOBAL--------------------------------*/
+
+body, div, p, ul, img {
+	margin:0px;
+	padding:0px;
+	font-family: helvetica;
+	font-size: 22px;
+	padding-bottom: 1px;
+}
+
+b {
+	font-style: italic;
+	background-color: #6CF;
+	color: #060;
+	padding-bottom: -1px;
+	padding-right: 3px;
+}
+
+sub {
+	font-style: bold;
+	border-left: solid 20px #36F;
+	padding-left: 2px;
+	font-family: garamond;
+}
+
+sup {
+	font-style: bold;
+	border-right: solid 20px #FC0;
+	padding-right: 2px;
+	font-family: garamond;
+}
+
+i1 {
+	color: #060;
+	font-style: italic;
+}
+
+i2 {
+	color: #F39;
+	font-style: italic;
+}
+
+i3 {
+	color: #36F;
+	font-style: italic;
+}
+
+i4 {
+	color: #FC0;
+	font-style: italic;
+}
+
+u {
+	font-family: garamond;
+	font-size: 28px;
+	border-left: dotted #99F;
+	border-bottom: solid 2px #F39;
+	padding-left: 2px;
+
+}
+
+
+h1	{
+	font-size: 28px;
+	font-style: bold;
+	padding-bottom: -5px;
+	border-bottom: dashed 6px #66C;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+body {
+	background-color: #666;
+}
+
+img {
+	border-width: 1px 1px 1px 1px;
+	border-color: #000;
+	border-style: solid;
+}
+
+a { outline:none; } /* Remove Firefox's dotted borders */
+
+a:link { 
+	color: #666;
+	text-decoration: none;
+}
+a:visited {
+	color: #666;
+	text-decoration: none;
+}
+a:hover {
+	color: #CCC;
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+
+
+/*------------------------------CONTENT--------------------------------*/
+
+/*MAIN ELEMENTS*/
+
+#top{
+	background-color: #000;
+}
+
+#header{
+	background-color: #333;
+}
+
+#main{
+	background-color: #999;
+}
+
+#footer{
+	background-color: #CCC;
+}
+
+/*SIZE AND POSITION OF MAIN ELEMENTS*/
+
+.center{
+	width:800px;
+	height:100px;
+	margin:0 auto;
+	padding:0;
+	background-color: #EEE;
+}
+.center_top{
+	width:800px;
+	height:50px;
+	margin:0 auto;
+	padding:0;
+	background-color: #333;
+}
+.center_header{
+	width:800px;
+	height:127px;
+	margin:0 auto;
+	padding:0;
+	background-color: #666;
+}
+.center_main{
+	width:800px;
+	height:650px;
+	margin:0 auto;
+	padding-top: 50px;
+	background-color: #FFF;
+}
+
+.center_main2{
+	width:602px;
+	height:650px;
+	margin:0 auto;
+	padding-top: 50px;
+	padding-left:98px;
+	padding-right: 98px;
+	padding-bottom:50px;
+	background-color: #000;
+}
+.center_footer{
+	width:800px;
+	height:100px;
+	margin:0 auto;
+	background-color: #DFDFDF;
+}
+
+
+/*INSIDE MAIN ELEMENTS*/
+
+.top_left{
+	margin:0px 0px 0px 0px;
+	padding:10px 0px 0px 100px;
+	font-size: 12px;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+.top_right{
+	margin:0px 0px 0px 0px;
+	padding:10px 100px 0px 0px;
+	font-size: 12px;
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+}
+
+.name{
+	margin:10px 0px 0px 100px;
+	padding:0px 0px 0px 0px;
+	font-size: 20px;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+.thumbs{
+	padding:0px 0px 0px 0px;
+	width: 607px;
+	margin: auto;
+	height: 604px;
+	background-color: #000;
+}
+
+.fullsize{
+	padding:0px 0px 0px 0px;
+	width: 602px;
+	margin: auto;
+	height: 608px;
+	background-color: #FFF;
+	
+}
+
+.description{
+	margin:0px 100px 0px 100px;
+	padding:10px 0px 0px 0px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	line-height: 17px;
+}
+
+
+/*NAVIGATION*/
+
+#navcontainer {
+	width: 200px;
+	float: right;
+	margin: 10px 100px 0px 0px;
+}
+
+#navcontainer ul
+{
+	list-style-type: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+#navcontainer a
+{
+	display: block;
+	padding: 3px 3px 3px 7px;
+	width: 190px;
+	background-color: #999;
+	margin: 1px 0px 0px 0px;
+}
+
+#navcontainer a:link, #navlist a:visited
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+#navcontainer a:hover
+{
+	background-color: #FFF;
+	color: #333;
+}

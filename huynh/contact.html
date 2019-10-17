@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Diana</title>
+<link href="portfolio.css" rel="stylesheet" type="text/css" />
+
+<link href="jackbox/css/jackbox.css" rel="stylesheet" type="text/css" />
+<link href="jackbox/css/jackbox_hovers.css" rel="stylesheet" type="text/css" />
+
+
+        <!--[if lt IE 9]>
+        	<link href="jackbox/css/jackbox-ie8.css" rel="stylesheet" type="text/css" />
+        	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        
+        <!--[if gt IE 8]><link href="jackbox/css/jackbox-ie9.css" rel="stylesheet" type="text/css" /><![endif]-->
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="jackbox/js/jackbox-packed.min.js"></script>
+        
+        <script type="text/javascript">
+		
+			jQuery(document).ready(function() {
+				
+				/* ******************* */
+				/* ALL JACKBOX OPTIONS */
+				/* ******************* */
+				
+				jQuery(".jackbox[data-group]").jackBox("init", {
+				
+					deepLinking: true,              // choose to use the deep-linking feature ("true" will enhance social sharing!) true/false
+					showInfoByDefault: false,       // show item info automatically when content loads, true/false
+					preloadGraphics: true,          // preload the jackbox graphics for a faster jackbox
+					fullscreenScalesContent: true,  // Choose to always scale content up in fullscreen, true/false
+					defaultShareImage: "1.jpg",     // the default image to share for non-image items, only relevent to Pinterest
+					
+					autoPlayVideo: false,           // video autoplay default, this can also be set per video in the data-attributes, true/false
+					flashVideoFirst: false,         // choose which technology has first priority for video, HTML5 or Flash, true/false
+					defaultVideoWidth: 960,         // the default video width, can also be set per video in the data-attributes
+					defaultVideoHeight: 540,        // the default video width, can also be set per video in the data-attributes
+					
+					useThumbs: true,                // choose to use thumbnails, true/false
+					useThumbTooltips: true,         // choose to use thumbnail tooltips, true/false
+					thumbsStartHidden: true,       // choose to initially hide the thumbnail strip, true/false
+					thumbnailWidth: 75,             // the default video width, can also be set per video in the data-attributes
+					thumbnailHeight: 50,            // the default video height, can also be set per video in the data-attributes
+					showPageScrollbar: false,       // if you don't like the "page jump" when the scrollbar disappears, set this to "true"
+					useKeyboardControls: true       // The left and right keyboard arrows will cycle through the items.  up/down will toggle thumbs
+					
+				});
+				
+		
+
+			});
+			
+			
+	
+			
+		
+		</script>
+
+
+</head>
+
+<body>
+<div id="all">
+<div id="wrapper">
+<div id="side">
+<div id="title">
+<h1><a href="index.html">Diana Huynh</a></h1>
+
+</div><!--End Title-->
+
+<div id="navigation">
+<h2 class="navheader slide-trigger">Menu <span></span></h2>
+
+<ul class="navigation group">
+<li class="activebutton"><a href="index.html">Works</a></li>
+
+<div class="filters clearfix" id="options">
+<ul class="option-set clearfix">
+<li><a href="index.html" class="selected">Show all</a></li>
+<li><a href="index.html#filter=.design">Design</a></li>
+<li><a href="index.html#filter=.typography">Typography</a></li>
+<li><a href="index.html#filter=.web">Web</a></li>
+<li><a href="index.html#filter=.misc">Misc</a></li>
+</ul>
+</div><!-- end filters -->
+
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+
+</div>
+<!--End Nav--><!--End Side-->
+</div>
+<div id="space"></div><!--end space-->
+<div id="info">
+<h3>Contact</h3>
+<p></p>
+
+<p>Info 2</p>
+</div><!--End Works-->
+</div><!--End wrapper-->
+</div>
+
+
+
+
+<script src="js/mobnav.js"></script>
+<script type="text/javascript"> 
+$(document).ready(function(){
+    $('.slide-trigger').collapsable();
+});
+</script>
+    
+
+</body>
+</html>

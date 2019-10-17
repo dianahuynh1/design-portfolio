@@ -1,0 +1,459 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+
+a.fade {background-color: #F90; color: #FFF; padding: 50px;
+	-webkit-transition: all 0.5s ease-out;
+ 	-moz-transition: all 0.5s ease-out;
+ 	-ms-transition: all 0.5s ease-out;
+  	-o-transition: all 0.5s ease-out;
+  	transition: all 0.5s ease-out;
+}
+a.fade:hover {background-color: #606}
+
+/*font*/
+
+
+@font-face {
+    font-family: 'amaranthbold';
+    src: url('font/amaranth-bold-webfont.eot');
+    src: url('font/amaranth-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/amaranth-bold-webfont.woff') format('woff'),
+         url('font/amaranth-bold-webfont.ttf') format('truetype'),
+         url('font/amaranth-bold-webfont.svg#amaranthregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'amaranthregular';
+    src: url('font/amaranth-webfont.eot');
+    src: url('font/amaranth-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/amaranth-webfont.woff') format('woff'),
+         url('font/amaranth-webfont.ttf') format('truetype'),
+         url('font/amaranth-webfont.svg#amaranthregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/*end font*/
+
+
+body {
+	font-family: 'amaranthregular', Helvetica, sans-serif;
+	margin: 0px auto 0px auto;
+	color: #666666;
+}
+
+
+#wrapper { 
+	position: relative; 
+	z-index: 2;
+	width: 1230px;
+	margin: 0px auto 20px 10px; 
+	padding: 0px 10px 20px 10px;
+	background-color: #fff; 
+}
+
+#side {
+	position: fixed;
+	margin: 0px 0px 0px 10px;
+}
+
+#title {
+	width: 200px;
+	height: 120px;
+	/*background-color: #666666;*/
+	border-left: 10px solid #efefef;
+	margin: 0px 0px 15px 0px;
+	
+}
+
+<!---------NAVIGATION---------->
+#navigation {
+	margin: 15px 0px 0px 0px;
+	width: 250px;
+	
+}
+
+#navigation li {
+	margin: 1px 0px 1px 0px;
+	text-transform: capitalize;
+	/*background-color: #666666;*/
+	border-left: 10px solid #efefef;
+}
+#navigation li a {
+	display: block;
+	padding: 6px 10px 6px 10px;
+	text-decoration: none;
+	-webkit-transition: all 0.5s ease-out;
+ 	-moz-transition: all 0.5s ease-out;
+ 	-ms-transition: all 0.5s ease-out;
+  	-o-transition: all 0.5s ease-out;
+  	transition: all 0.5s ease-out;	
+}
+#navigation li a:hover {
+	text-decoration: none;
+}
+
+/* ----- FILTERS ----- */
+
+
+#navigation .filters li a {
+	color: #e76767;
+	font-size: 13px;
+	margin: -1px 0px 0px 0px;
+	padding: 3px 10px 3px 10px;	
+	text-transform: capitalize;
+}
+#navigation .filters li a:hover {
+	color: #666666;
+}
+.filters {
+	margin-bottom: 0px;
+	margin-top: -1px;
+	padding: 0px 0px 10px 0px;
+	line-height: 14px;
+	/*background-color: #666666;*/
+	
+}
+#navigation li.activebutton a {
+	-webkit-transition: none;
+ 	-moz-transition: none;
+ 	-ms-transition: none;
+  	-o-transition: none;
+  	transition: none;
+}
+#navigation li.activebutton a {
+	color: #666666;	
+}
+#navigation li a.selected {
+	color: #666666;	
+}
+
+
+#space {
+	margin: 0px 0px 0px 240px;
+	height: 140px;	
+}
+
+#info {
+	background-color: #efefef;
+	padding: 10px 10px 0px 10px;
+	margin: 0px 5px 0px 200px;
+	width: 435px;
+	height: 400px;
+	line-height: 20px;
+	word-spacing: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+	
+
+#works {
+	background-color: #efefef;
+	padding: 10px 0px 0px 10px;
+	margin: 0px 5px 0px 200px;
+	width: 930px;
+}
+
+#works img {
+	width: 100%;
+	height: auto;	
+}
+
+.element {
+  margin: 0px 10px 10px 0px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #ccc;
+}
+.size1 {
+	width: 145px;
+	/*height: auto;*/	
+}
+.size2 {
+	width: 300px;
+	/*height: 310px;*/	
+}
+
+h1 {
+	font-size: 36px;
+	width: 200px;
+	line-height: 35px;
+	letter-spacing: 1px;
+	padding: 40px 0px 0px 10px;
+}
+
+h2{
+	width: 240px;
+	height: 30px;
+	font-size: 18px;
+	letter-spacing: 1px;
+	margin: 0px 0px 1px 0px;
+	padding: 10px 0px 0px 10px;
+	
+}
+
+h3 {
+	font-size: 24px;
+	margin: 5px 10px 20px 0px;
+	font-family: 'amaranthregular', Helvetica, sans-serif;
+	letter-spacing: 1px;
+}
+
+p {
+	padding: 5px 0px 20px 0px;
+}
+
+a {
+	text-decoration: none;
+	color: #666666;
+	
+}
+/* ------------------ MOBILENAV -------------------- */
+
+
+.slide-trigger {
+  display: none; /* need this */
+  /*border: 1px solid #CCCCCC;*/
+  cursor: pointer;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 10px 10px 5px 10px;
+  background-color: rgba(102,102,102,0.25);
+  color: #FFF;
+}
+
+.slide-trigger span {
+  background-image: url("../images/dropdown-arrows.png");
+  background-position: 0 -14px;
+  display: block;
+  float: right;
+  margin-top: 7px;
+  height: 14px;
+  width: 32px;
+}
+
+
+/* ///////////////////// MEDIA QUERIES FOR RESPONSIVENESS ///////////////////// */
+
+
+/* DESKTOP */
+@media screen and (max-width:1300px) {
+	
+#wrapper {  
+	width: 1075px;
+}
+
+#works {
+	width: 775px;
+}
+
+}
+
+
+/* TABLET */
+@media screen and (max-width: 1000px) {
+	
+#wrapper {  
+	width: 765px;
+}
+
+#works {
+	width: 465px;
+}
+
+}
+
+
+/* MOBILE */
+@media screen and (max-width: 700px) {
+
+#wrapper {  
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#works {
+  padding: 10px 0px 0px 10px;
+  margin: 0px 0px 0px 0px; 
+  width: 310px;
+  position: relative;
+}
+
+#info {
+  padding: 10px 0px 0px 10px;
+  margin: 0px 0px 0px 0px; 
+  width: 310px;
+  position: relative;
+  height: auto;
+}
+
+#side { 
+	width: 320px;
+	position: relative;
+	margin: 0px;
+}
+
+#title {
+	width: 320px;
+	height: 80px;
+}
+
+h1 {
+	font-size: 51px;
+	width: 300px;
+	line-height: 35px;
+	letter-spacing: 1px;
+	padding: 30px 0px 0px 10px;
+}
+
+h2{ width: 300px;}
+
+
+
+#navigation {
+	font-size: 20px;	
+	width: 320px;
+	margin-left: 0px;
+	margin-top: 0px;
+	position: relative;
+}
+
+
+#space {
+	margin: 0px 0px 0px 0px;
+	height: 20px;	
+}
+
+
+/* Isotope */
+
+.element {
+  margin: 0px 10px 10px 0px;
+}
+.size1 {
+	width: 145px;
+	/*height: auto;*/	
+}
+.size2 {
+	width: 300px;
+	/*height: 310px;*/	
+}
+
+
+.slide-trigger { display: block; }
+.no-js .slide-trigger { display: none; }
+.navigation { display: none; }
+.no-js .navigation { display: block; }
+.navigation { }
+.navigation li { float: none; }
+.navigation li a { border-bottom: none; }
+
+}
+
+
+
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
